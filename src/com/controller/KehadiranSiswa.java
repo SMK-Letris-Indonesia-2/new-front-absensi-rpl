@@ -5,10 +5,13 @@
  */
 package com.controller;
 
+import com.view.KehadiranFrame;
+import java.sql.SQLException;
+
 /**
  *
  * @author LAB 2 PC 21
  */
 public interface KehadiranSiswa {
-    public void (com.view cv) throws SQLException;
+    public void Submit (KehadiranFrame kf) throws SQLException;
 }
