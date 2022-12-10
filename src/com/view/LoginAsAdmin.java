@@ -45,6 +45,11 @@ public class LoginAsAdmin extends javax.swing.JFrame {
         });
 
         btnmurid.setText("Tambah Data Murid");
+        btnmurid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnmuridActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,8 +100,14 @@ public class LoginAsAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnguruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguruActionPerformed
-        // TODO add your handling code here:
+        new com.view.tambahDataGuru().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnguruActionPerformed
+
+    private void btnmuridActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmuridActionPerformed
+        new com.view.tambah_data_murid().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnmuridActionPerformed
 
     /**
      * @param args the command line arguments
