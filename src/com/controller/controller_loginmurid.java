@@ -1,5 +1,5 @@
-
-import com.view.loginFrame;
+package com.controller;
+import com.view.loginMurid;
 import java.sql.SQLException;
 
 /*
@@ -13,5 +13,7 @@ import java.sql.SQLException;
  * @author LAB 2 PC 36
  */
 public interface controller_loginmurid {
-    public void simpan (loginFrame lf) throws SQLException;   
+    public void hadir (loginMurid lm) throws SQLException;   
+    public void tampil (loginMurid lm) throws SQLException;   
+
 }

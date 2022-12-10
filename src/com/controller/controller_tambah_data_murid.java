@@ -5,7 +5,7 @@
  */
 package com.controller;
 
-import com.view.tambah_data_murid;
+import com.model.tambah_data_murid;
 import java.sql.SQLException;
 
 /**
@@ -13,5 +13,5 @@ import java.sql.SQLException;
  * @author PC LAB 2
  */
 public interface controller_tambah_data_murid {
-    public void simpan (tambah_data_murid tdm) throws SQLException;
+    public void simpan (tambah_data_murid vtdm) throws SQLException;
 }
