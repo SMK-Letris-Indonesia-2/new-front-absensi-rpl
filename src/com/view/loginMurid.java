@@ -6,17 +6,24 @@
 
 package com.view;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author Administrator
  */
 public class loginMurid extends javax.swing.JFrame {
-
+        
     /**
      * Creates new form loginMurid
      */
     public loginMurid() {
         initComponents();
+             JLabel label = new JLabel("Ini adalah label");
+             com.model.login_murid tampil = new com.model.login_murid();
+
+
+        
     }
 
     /**
@@ -34,6 +41,9 @@ public class loginMurid extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        lblNIS = new javax.swing.JLabel();
+        lblNAMA = new javax.swing.JLabel();
+        lblTGL = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,8 +58,13 @@ public class loginMurid extends javax.swing.JFrame {
 
         jLabel4.setText("Date :");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Hadir");
+
+        lblNIS.setText("jLabel5");
+
+        lblNAMA.setText("jLabel6");
+
+        lblTGL.setText("jLabel7");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -61,6 +76,11 @@ public class loginMurid extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblNIS)
+                    .addComponent(lblNAMA)
+                    .addComponent(lblTGL))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(187, Short.MAX_VALUE)
@@ -78,11 +98,17 @@ public class loginMurid extends javax.swing.JFrame {
                 .addGap(47, 47, 47)
                 .addComponent(jLabel1)
                 .addGap(26, 26, 26)
-                .addComponent(jLabel2)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(lblNIS))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(lblNAMA))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(lblTGL))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53))
@@ -144,5 +170,8 @@ public class loginMurid extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    public javax.swing.JLabel lblNAMA;
+    public javax.swing.JLabel lblNIS;
+    public javax.swing.JLabel lblTGL;
     // End of variables declaration//GEN-END:variables
 }
