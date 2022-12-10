@@ -14,4 +14,5 @@ import java.sql.SQLException;
  */
 public interface KehadiranSiswa {
     public void Submit (KehadiranFrame kf) throws SQLException;
+    public void Tampil (KehadiranFrame kf) throws SQLException;
 }
