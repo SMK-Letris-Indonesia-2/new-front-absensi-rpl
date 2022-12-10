@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controller;
+package com.controller;
 
 import com.view.tambah_data_murid;
 import java.sql.SQLException;
