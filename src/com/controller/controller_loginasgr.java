@@ -7,7 +7,6 @@ package com.controller;
 
 import java.sql.SQLException;
 import com.view.loginasguru;
-
 /**
  *
  * @author Lab 1
