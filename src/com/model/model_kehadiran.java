@@ -7,19 +7,14 @@ package com.model;
 
 import com.controller.KehadiranSiswa;
 import com.view.KehadiranFrame;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import javax.swing.JOptionPane;
 import com.koneksi.koneksi;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-
 /**
  *
  * @author Lab 1
  */
-public class model_kehadiran implements KehadiranSiswa{
+public class model_kehadiran implements KehadiranSiswa {
 
     @Override
     public void Submit(KehadiranFrame kf) throws SQLException {
@@ -39,21 +34,21 @@ public class model_kehadiran implements KehadiranSiswa{
     @Override
     public void Tampil(KehadiranFrame kf) throws SQLException {
         try {
-        Connection con = koneksi.getcon();
-        Statement stt = con.createStatement();
-        String sql = "SELECT * FROM siswa ORDER BY NIS ASC";
-        ResultSet res = stt.executeQuery(sql);
-        while (res.next()){
-            Object[] ob = new Object[8];
-            ob[0] = res.getString(1);
-            ob[1] = res.getString(2);
-            ob[2] = res.getString(3);
-            ob[3] = res.getString(4);
-      
-        }
-    }catch (Exception e){
+            Connection con = koneksi.getcon();
+            Statement stt = con.createStatement();
+            String sql = "SELECT * FROM siswa ORDER BY NIS ASC";
+            ResultSet res = stt.executeQuery(sql);
+            while (res.next()) {
+                Object[] ob = new Object[8];
+                ob[0] = res.getString(1);
+                ob[1] = res.getString(2);
+                ob[2] = res.getString(3);
+                ob[3] = res.getString(4);
+
+            }
+        } catch (Exception e) {
             System.out.println(e);
-}
-    
-}
+        }
+
+    }
 }
