@@ -13,5 +13,5 @@ import java.sql.SQLException;
  * @author PC LAB 2
  */
 public interface controller_tambah_data_murid {
-    public void simpan (tambah_data_murid tdm) throws SQLException;
+    public void Submit (tambah_data_murid tdm) throws SQLException;
 }
