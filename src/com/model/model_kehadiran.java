@@ -31,8 +31,8 @@ public class model_kehadiran implements KehadiranSiswa{
             JOptionPane.showMessageDialog(null, "Data Berhasil Disimpan");
             prepare.close();
         } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Data Gagal Disimpan");
             System.out.println(e);
-        }finally {
         }
     }
 
